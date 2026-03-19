@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrustLens | Personal AI Security</title>
+    <style>
+        :root {
+            --bg: #0f0f1a;
+            --card: #1c1c2d;
+            --accent: #b0b0ff;
+            --glow: #00f2ff;
+            --safe: #2dffb2;
+            --text: #e0e0e0;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: var(--card);
+            padding: 3rem;
+            border-radius: 24px;
+            border: 1px solid rgba(176, 176, 255, 0.2);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            max-width: 600px;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--accent);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .tagline {
+            color: var(--glow);
+            font-weight: 600;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        .features {
+            text-align: left;
+            background: rgba(255,255,255,0.05);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+
+        .feature-item {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .feature-item::before {
+            content: "✓";
+            color: var(--safe);
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .calibration-note {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .download-btn {
+            background: linear-gradient(135deg, var(--safe), var(--glow));
+            color: #0f0f1a;
+            padding: 18px 40px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            display: inline-block;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(45, 255, 178, 0.3);
+        }
+
+        footer {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>TrustLens</h1>
+        <div class="tagline">Personal AI-Powered Security</div>
+        
+        <p>Protect your PC with advanced behavioral analytics and real-time threat detection. No admin server required.</p>
+
+        <div class="features">
+            <div class="feature-item">Standalone Monitoring</div>
+            <div class="feature-item">Persistent Data Collection</div>
+            <div class="feature-item">Local AI Training (Isolation Forest)</div>
+            <div class="feature-item">Real-time Security Alerts</div>
+        </div>
+
+        <p class="calibration-note">
+            Note: On first launch, TrustLens will perform a 30-minute system calibration. 
+            If you shut down your PC, progress is saved and will resume automatically.
+        </p>
+
+        <a href="#" class="download-btn">Download for Windows (.exe)</a>
+
+        <footer>
+            &copy; 2026 TrustLens Security Lab. 
+        </footer>
+    </div>
+
+</body>
+</html>
